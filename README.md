@@ -58,8 +58,11 @@ Instead of just storing files, **FileGenie makes your files searchable and intel
 ---
 
 ## 👨‍💻 Contributors
-- **Your Name** (Backend – Spring Boot)  
-- [Teammates if any]  
+- **Shivkumar bansal** (Backend – Spring Boot)  
+- **Sonu kumar**
+- **Vansh Garg**
+- **Chhavi Agrawal**
+- **Himanshi Agrawal**
 
 ---
 
