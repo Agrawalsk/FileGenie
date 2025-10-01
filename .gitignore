@@ -1,0 +1,15 @@
+# Java / Spring Boot
+target/
+*.iml
+*.class
+*.jar
+*.war
+*.log
+.idea/
+*.properties
+*.yml
+
+# Node / React
+node_modules/
+dist/
+build/
