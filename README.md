@@ -57,9 +57,9 @@ Instead of just storing files, **FileGenie makes your files searchable and intel
 
 ---
 
-## Problems that are arising middle of the development journey
+## Problems that are arising during the development journey
 - **File Read Security issue**.
--**High-Level Database Requirement**
+- **High-Level Database Requirement**
 
 ---
 
