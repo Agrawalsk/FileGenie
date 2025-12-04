@@ -2,7 +2,7 @@
 
 ## ✨ Overview
 **FileGenie** is a smart **File Management System** built with **Spring Boot, React, and GenAI**.  
-It allows users to upload multiple files of any type, automatically organizes them into **zip folders by category**, extracts file content, and enables **AI-powered search** by keywords or semantic meaning.  
+It allows users to upload multiple files of any type, automatically organises them into **zip folders by category**, extracts file content, and enables **AI-powered search** by keywords or semantic meaning.  
 
 Instead of just storing files, **FileGenie makes your files searchable and intelligent**.
 
@@ -12,7 +12,7 @@ Instead of just storing files, **FileGenie makes your files searchable and intel
 - 🖱️ **Drag & Drop File Upload** (multiple files at once)
 - 📦 **Auto-Zipping** – groups files into zips by type (PDFs, Docs, Images, etc.)
 - 📑 **Text Extraction** – reads content from PDF, Word, and Images (OCR)
-- 🔎 **Keyword Analysis** – finds most frequent words for fast lookup
+- 🔎 **Keyword Analysis** – finds the most frequent words for fast lookup
 - 🤖 **GenAI Semantic Search** – search with natural language and get the right files
 - 📂 **File Suggestions** – recommends related files based on content
 
@@ -23,7 +23,7 @@ Instead of just storing files, **FileGenie makes your files searchable and intel
 - **Backend**: Spring Boot (REST APIs for file handling & search)
 - **Database**: MySQL/Postgres for metadata + (optional) Elasticsearch
 - **AI/ML**:
-  - NLP: Tokenization, Stopword Removal, TF-IDF
+  - NLP: Tokenisation, Stopword Removal, TF-IDF
   - Embeddings: Sentence-BERT / HuggingFace for semantic search
   - OCR: Tesseract for images
 - **Storage**: Local file system / AWS S3 for storing raw & zipped files
@@ -32,7 +32,7 @@ Instead of just storing files, **FileGenie makes your files searchable and intel
 
 ## ⚡ Workflow
 1. User uploads multiple files via **drag & drop**.  
-2. **FileGenie** organizes files into zips by type.  
+2. **FileGenie** organises files into zips by type.  
 3. Extracts text from documents (PDF/Word/Images).  
 4. Creates an **index of frequent words** and builds **semantic embeddings**.  
 5. On search:
@@ -57,13 +57,21 @@ Instead of just storing files, **FileGenie makes your files searchable and intel
 
 ---
 
-## 👨‍💻 Contributors
-- **Shivkumar bansal** (Backend – Spring Boot)  
-- **Sonu kumar**
-- **Vansh Garg**
-- **Chhavi Agrawal**
-- **Himanshi Agrawal**
+## Problems that are arising during the development journey
+- **File Read Security issue**.
+- **High-Level Database Requirement**
 
 ---
+
+## 👨‍💻 Contributors
+- **Shivkumar bansal** (Backend – Spring Boot)  
+- **Sonu Kumar** (Fronted -React)
+- **Vansh Garg** (Machine learning model)
+- **Chhavi Agrawal** (Test Script)
+- **Himanshi Agrawal** (Other documentation)
+
+---
+
+
 
 > 💡 *FileGenie – Don’t just store your files, make them intelligent.*  
