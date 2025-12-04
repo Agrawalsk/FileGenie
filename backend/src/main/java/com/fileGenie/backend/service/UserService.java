@@ -1,30 +1,22 @@
 package com.fileGenie.backend.service;
 
-
-import com.fileGenie.backend.entity.User;
-import com.fileGenie.backend.repositary.UserRepository;
-import org.springframework.security.crypto.password.PasswordEncoder;
+import com.fileGenie.backend.model.User;
+import com.fileGenie.backend.repository.UserRepository;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
+import java.util.List;
 
 @Service
 public class UserService {
     private final UserRepository userRepository;
-    private final PasswordEncoder passwordEncoder;
-
-
-    public UserService(UserRepository userRepository, PasswordEncoder passwordEncoder) {
+    public UserService(UserRepository userRepository, EmailService emailService) {
         this.userRepository = userRepository;
-        this.passwordEncoder = passwordEncoder;
     }
 
-
-    public User register(String username, String rawPassword) {
-        if (userRepository.existsByUsername(username)) {
-            throw new IllegalArgumentException("Username already taken");
-        }
-        String hashed = passwordEncoder.encode(rawPassword);
-        User user = new User(username, hashed, "USER");
-        return userRepository.save(user);
+    public List<User> allUsers() {
+        List<User> users = new ArrayList<>();
+        userRepository.findAll().forEach(users::add);
+        return users;
     }
 }
